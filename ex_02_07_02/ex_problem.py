@@ -4,9 +4,10 @@
 fname = input("Enter file name: ")
 fh = open(fname)
 count =0
-
+total =0
 for line in fh:
     if line.startswith('X-DSPAM-Confidence:'):
+        abc = line.split()
+        total = total + float(abc[1])
         count = count+1
-
-print(count)
+print('Average spam confidence:', total/count)
