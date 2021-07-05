@@ -32,7 +32,6 @@ try :
 except:
     print('please enter number')
 print('Average: ', average)
-
 numlist = list()
 while True :
     inp = input('Enter number: ')

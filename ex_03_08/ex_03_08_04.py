@@ -7,5 +7,4 @@ fname = input('Enter file name: ')
 fh = open(fname)
 for line in fh:
     words = line.split()
-    words = words.sort()
-    
+    x = list()
