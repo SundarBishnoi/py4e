@@ -8,4 +8,4 @@ def computepay(hours,rate):
          gross_pay = hours * rate
          return gross_pay
 
-print("Pay",computepay(hours,rate))
+print("Pay:",computepay(hours,rate))

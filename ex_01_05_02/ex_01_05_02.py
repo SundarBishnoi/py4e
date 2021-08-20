@@ -1,3 +1,4 @@
+#program to find largest and smallest number in series entered by user.
 largest = None
 smallest = None
 while True:

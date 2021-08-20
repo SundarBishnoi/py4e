@@ -1,4 +1,4 @@
-text = "X-DSPAM-Confidence:    0.8475";
+text = "X-DSPAM-Confidence:    0.8475"
 sindex = text.find('0')
 lindex = text.find('5',sindex)
 fvalue = text[sindex:(lindex+1)]

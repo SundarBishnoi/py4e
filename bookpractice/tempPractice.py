@@ -1,43 +1,21 @@
-def repeat_lyrics():
-    print_lyrics()
-    print_lyrics()
-def print_lyrics():
-    print('Hello Kabira!!')
-repeat_lyrics()
+largest = None
+smallest = None
+while True:
+    the_num = input("Enter digit: ")
+    try:
+        the_num = int(the_num)
+        if largest is None and smallest is None:
+            largest = the_num
+            smallest = the_num
+        else :
+            if largest < the_num:
+                        largest = the_num
+            elif smallest > the_num :
+                        smallest = the_num
+    except:
+        if the_num == "done":
+            break
+        else : print("Invalid input")
 
-def print_twice(bruce):
-    print(bruce)
-    print(bruce)
-print_twice('Spam')
-print_twice(12)
-
-import math
-print_twice(math.pi)
-
-print_twice('Spam '*4)
-
-print_twice(math.cos(math.pi))
-
-michael = 'Eric, half a bee.'
-
-print_twice(michael)
-
-#fruitful function -- it return a value
-
-x= math.sqrt(16)
-print(x)
-
-# void function - don't have a return valu. if you try to assign the result to a variable , you get a special value called 'None'
-
-result = print_twice('Bing')
-
-print(result)
-
-print(type(None))
-
-def addtwo(a,b):
-    added = a + b
-    return added
-
-x = addtwo(14,12)
-print(x)
+print("Maximum is", largest)
+print("Minimum is", smallest)
