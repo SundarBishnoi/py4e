@@ -6,5 +6,5 @@ for line in fhandle1:
     if len(y) > 0 :
         for num in y:
             sum = sum + int(num)
-
+            
 print(sum)
