@@ -9,7 +9,7 @@ data = '''
   <email hide="yes"/>
     </person>
 '''
-    
+
 tree = ET.fromstring(data)
 print('Name: ', tree.find('name').text)
 print(tree.find('email').get('hide'))
