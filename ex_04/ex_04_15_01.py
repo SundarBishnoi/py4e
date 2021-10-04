@@ -7,7 +7,7 @@ cur.execute('DROP TABLE IF EXISTS Counts')
 cur.execute('CREATE TABLE Counts (email TEXT, count integer)')
 
 fname = input('Enter file name: ')
-if (len(fname) < 1): fname = 'D:\python\py4e\ex_04\\mbox.txt'
+if (len(fname) < 1): fname = 'mbox-short.txt'
 
 fhandle = open(fname)
 
