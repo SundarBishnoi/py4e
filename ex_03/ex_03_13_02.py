@@ -19,12 +19,11 @@ input = '''[
     {"id" : "009","x" : "7","name" : "Chuck"}
     ]'''
 
-#by passing input object to loads method, we will get a list.. so now we can access items as normal list item
+#By passing input object to loads method, we will get a list.. so now we can access items as normal list item
 info = json.loads(input)
-print('USer Count: ', len(info))
+print('User Count: ', len(info))
 for item in info:
     print('Name: ', item["name"])
     print('Id: ', item["id"])
     print('Attribute:', item['x'])
-
 

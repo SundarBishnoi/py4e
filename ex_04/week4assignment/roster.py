@@ -1,3 +1,4 @@
+#many to many relationships..
 import json
 import sqlite3
 
@@ -28,6 +29,7 @@ CREATE TABLE Member (
     PRIMARY KEY(user_id, course_id)
 );
 '''
+#Member table is connector table and has many-to-many relationship.
 )
 
 fname = input('Enter file names: ')
@@ -64,4 +66,3 @@ cur.execute('''
 record = cur.fetchone()
 print(record)
 conn.commit()
-

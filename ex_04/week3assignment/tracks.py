@@ -1,3 +1,4 @@
+#one to many relationships between tables..
 #import the xml library and sqlite db module 
 import xml.etree.ElementTree as ET
 import sqlite3
