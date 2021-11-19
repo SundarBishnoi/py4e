@@ -23,5 +23,4 @@ print('Retrieved ', len(data), 'characters')
 
 js = json.loads(str(data))
 
-
 print(js['results'][0]['place_id'])

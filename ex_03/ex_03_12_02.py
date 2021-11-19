@@ -10,9 +10,10 @@ fhand =  urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
 for line in fhand:
     words = line.decode().split()
     for word in words:
-        if word not in counts:
-            counts[word] = 0
-        counts[word] += 1
+        # if word not in counts:
+        #     counts[word] = 0
+        # counts[word] += 1
+        counts[word] = counts.get(word, 0) + 1
 print(counts)
 
 
@@ -44,7 +45,7 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-url = input('Enter --')
+url = input('Enter url ---')
 html = urllib.request.urlopen(url, context=ctx).read()
 links = re.findall('href="(http[s]?://.+?)"', html.decode())
 
@@ -54,7 +55,10 @@ for link in links:
 #Reading binary files using urllib
 img = urllib.request.urlopen('http://data.pr4e.org/cover3.jpg').read()
 fhand = open('cover3.jpg', 'wb')
-fhand.write(img) #this program reads all of the data in at once across the network and store in the variable img in the main memory of your computer, then opens the file cover.jpg and writes the data out to your disk. It will only work if the size of file is less than size of memory of your computer.
+fhand.write(img) #this program reads all of the data in at once across the network and 
+#store in the variable img in the main memory of your computer, 
+#then opens the file cover.jpg and writes the data out to your disk. 
+# It will only work if the size of file is less than size of memory of your computer.
 fhand.close()
 
 #to avoid the running out of memory, we can retrieve the data in blocks(or buffers) and then write each block before retrieving next block

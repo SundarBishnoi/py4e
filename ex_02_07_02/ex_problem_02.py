@@ -5,7 +5,7 @@
 #Do not use the sum() function or a variable named sum in your solution.
 
 fname = input("Enter file name: ")
-#fname = 'D:\python\py4e\ex_02_07_02\\' + fname
+fname = 'D:\python\py4e\ex_02_07_02\\' + fname
 total =0
 count =0
 fhand = open(fname)

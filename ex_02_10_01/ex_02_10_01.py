@@ -101,8 +101,9 @@ temp = sorted(temp, reverse=True)
 for val, key in temp[:10]:
     print(key, val)
 
-# -- shorter version of above code 
-#List Comprehension creates a dynamic list. In this case, we make a list of reversed tuples and then sort it.
+#-- shorter version of above code 
+#List Comprehension creates a dynamic list. In this case, 
+#we make a list of reversed tuples and then sort it.
 
 c = {'a':10, 'b':1,'c':22}
 print(sorted([(v, k) for (k, v) in c.items()]))

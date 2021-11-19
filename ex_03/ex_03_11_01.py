@@ -31,7 +31,7 @@ for line in fhandle3:
 
 
 #Matching and extracting data
-x = 'From: My 2 favorite numbers are 19 and 12 sundar@gmail.com'
+x = 'From: My 2 favorite numbers are 19 and 12 sundar@gmail.com  '
 y = re.findall('[0-9]+', x)
 print(y)
 
@@ -40,12 +40,13 @@ print(y)
 
 # Greedy Matching
 y = re.findall('^F.+:', x)
-
+print(y)
 # Non Greedy Matching
 y = re.findall('^F.+?:', x)
+print(y)
 
+# Fetching non whitespace character
 y = re.findall('\S+@\S+',x)
-
 print(y)
 
 y = re.findall('(\S+?@\S+)', x)

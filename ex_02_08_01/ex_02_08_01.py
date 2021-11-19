@@ -1,5 +1,5 @@
 #Lists
-# List constants are surrounded by square brackets
+#List constants are surrounded by square brackets
 from typing import TYPE_CHECKING
 
 
@@ -46,7 +46,7 @@ print(len(friend))
 x = [1,2 ,'boy',15]
 print(len(x))
 
-#Using the Range function -- range funtion returns a list of numbers from zero to one less than parameter
+#Using the Range function --  range function returns a list of numbers from zero to one less than parameter
 print(range(4))
 
 friends = ['Joseph','Glenn','Sally']
@@ -79,7 +79,7 @@ print(t[:])
 
 #Building a List from Scratch
 #append will add the item in the end of list
-stuff = list()
+stuff = list() # or can be initiated using []
 stuff.append('book')
 stuff.append(99)
 print(stuff)
@@ -139,7 +139,7 @@ for line in fhand:
     print(words[2])
  #   print(words)
 
-#The Double Split Pattern
+#The Double Split Pattern --->>> you split two times to get the desired string
 
 line = 'From wagnermr@iupui.edu Fri Jan  4 10:38:42 2008'
 words = line.split()

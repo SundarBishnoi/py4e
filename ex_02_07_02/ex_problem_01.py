@@ -4,7 +4,7 @@
 
 
 fname = input("Enter file name: ")
-#fname = 'D:\python\py4e\ex_02_07_02\\' + fname
+fname = 'D:\python\py4e\ex_02_07_02\\' + fname
 fhand = open(fname)
 for line in fhand:
     line = line.rstrip()

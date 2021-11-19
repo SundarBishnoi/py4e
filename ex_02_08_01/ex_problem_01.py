@@ -9,8 +9,8 @@ finalList = list()
 for line in fhand:
     line = line.rstrip()
     words = line.split()
-    for i in words:
-        if i not in finalList:
-            finalList.append(i)
+    for word in words:
+        if word not in finalList:
+            finalList.append(word)
 finalList.sort()
 print(finalList)

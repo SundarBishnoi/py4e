@@ -30,3 +30,4 @@ for item in js['comments']:
     sum += item['count']
 
 print(sum)
+

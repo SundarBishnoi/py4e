@@ -5,7 +5,7 @@
 #Opening a file - file handle
 #Reading file names
 #File structure  - new line character
-#Dealing with bad files
+#Dealing with bad file names with try/except
 #Reading a file line by line with a for loop
 
 
@@ -17,7 +17,7 @@ for line in fhand:
     print(line)
 
 
-#Reading  the *Whole* files  //we can read the whole file into a single string
+#Reading  the *Whole* files // we can read the whole file into a single string
 #Reading the *Whole* File
 #we can read the whole file(newlines and all) into a single string
 fhand = open('D:\python\py4e\ex_02_07_02\mbox-short.txt')

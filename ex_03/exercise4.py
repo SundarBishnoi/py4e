@@ -17,5 +17,4 @@ counts = xmldata.findall('.//count')
 for v in counts:
     sum += int(v.text)
 
-
 print(sum)

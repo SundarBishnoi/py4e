@@ -7,6 +7,8 @@ data = '''{
     "email" : {"hide" : "yes"}
 }'''
 
+#xml has element tree module which has fromstring method to access to xml data where json module has loads method.
+
 #by passing data object to loads method, we will get a dictionary.. so now we can access items as normal dictionary item
 
 info = json.loads(data)
